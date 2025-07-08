@@ -1,0 +1,4 @@
+pip3 install requests -t package/
+cp fetch_weather.py package/
+cd package
+zip -r ../fetch_weather.zip .
