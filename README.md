@@ -97,7 +97,7 @@ AWS-3-Tier-_with_Terraform/
 🔹 LoadBalancer for frontend
 🔹 Centralized monitoring and IAM security controls
 
-📁 View diagram: [`assets/architecture.png`](./assets/architecture.png)
+📁 View diagram: [`assets/architecture.png`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/architecture.png)
 
 ---
 
