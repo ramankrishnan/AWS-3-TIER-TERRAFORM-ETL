@@ -285,7 +285,10 @@ terraform apply
 
 🔐 API keys stored securely in **Terraform.tfvars**.
 
-📸 
+📸  ### 📌 S3 
+![S3.ouput]https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/s3.output.png
+     📸  ### 📌 S3(sample output) 
+![S3.ouput]https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/s3.png
 ---
 
 ## 🌐 Stage 6: Custom Domain Integration (Route 53)
