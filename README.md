@@ -164,7 +164,7 @@ terraform apply
 
 ## ☸️ Stage 3: Kubernetes Deployment (App on EKS)
 
-> 📍 Path: [`k8s/`](./k8s)
+
 
 Deploys frontend + backend microservices on **EKS cluster** with health checks, autoscaling, and secure config handling.
 
@@ -180,20 +180,25 @@ Deploys frontend + backend microservices on **EKS cluster** with health checks, 
 | 📈 HPA        | Horizontal Pod Autoscaler based on CPU     |
 
 ### 📦 Deployment Commands
+```
+https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL.git
 
+```
+
+```bash
+cd kubernetes/
+```
 ```bash
 # Setup kube context
 aws eks --region <region> update-kubeconfig --name <cluster-name>
 
 # Deploy backend
 kubectl apply -f .
-
-
 ```
+📌 Replace image name in frontend-deployment.yaml 
 
-📸 Output screenshots available in [`outputs/`](./outputs)
 
----
+
 
 ## 📊 Stage 4: Logging, Monitoring & Alerting
 
@@ -203,12 +208,19 @@ Centralized logging + metrics tracking using **CloudWatch**, **Fluent Bit**, **K
 
 ### 🔧 Setup
 
-```bash
-# Deploy metrics server
-kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+```clone this repossitory
+```
+https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL.git
 
-# Setup Fluent Bit
-kubectl apply -f k8s/monitoring/fluent-bit/
+```
+
+```bash
+cd external-data-integration/
+terraform init
+terraform plan
+terraform apply
+```
+
 ```
 
 ### 🛑 Alarm Sample (cloudwatch.tf)
@@ -229,10 +241,12 @@ resource "aws_cloudwatch_metric_alarm" "cpu_utilization_high" {
   }
 }
 ```
-
+📌 Replace values in before terraform init you have to change  your `instance.id` .
 📬 Alerts delivered via **SNS** to email/SMS.
 
-📸 Check log output in [`outputs/`](./outputs)
+
+📸 ### 📌 EKS CLUSTER
+![CLOUDWATCH  ALARAM](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/WhatsApp%20Image%202025-07-09%20at%209.40.26%20AM.jpeg)
 
 ---
 
