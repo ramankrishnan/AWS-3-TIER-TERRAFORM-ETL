@@ -202,24 +202,17 @@ kubectl apply -f .
 
 ## 📊 Stage 4: Logging, Monitoring & Alerting
 
-> 📍 Path: [`k8s/monitoring/`](./k8s/monitoring)
+
 
 Centralized logging + metrics tracking using **CloudWatch**, **Fluent Bit**, **Kubernetes Metrics Server**, and **SNS alerts**.
 
 ### 🔧 Setup
 
-```clone this repossitory
 ```
 https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL.git
 
 ```
 
-```bash
-cd external-data-integration/
-terraform init
-terraform plan
-terraform apply
-```
 
 ```
 
@@ -240,7 +233,15 @@ resource "aws_cloudwatch_metric_alarm" "cpu_utilization_high" {
     InstanceId = "<REPLACE_WITH_INSTANCE_ID>"
   }
 }
+``
+
+```bash
+cd monitoring/
+terraform init
+terraform plan
+terraform apply
 ```
+`
 📌 Replace values in before terraform init you have to change  your `instance.id` .
 📬 Alerts delivered via **SNS** to email/SMS.
 
@@ -252,7 +253,7 @@ resource "aws_cloudwatch_metric_alarm" "cpu_utilization_high" {
 
 ## 🔄 Stage 5: ETL Integration with Netflix-style API
 
-> 📍 Path: [`lambda/`](./lambda)
+
 
 Fetches movie data from a **Netflix-like public API**, processes it with **Lambda**, stores in **S3**, and triggers via **EventBridge**.
 
@@ -264,15 +265,7 @@ Fetches movie data from a **Netflix-like public API**, processes it with **Lambd
 
 ### 🧪 Sample Output
 
-```json
-[
-  {
-    "id": "123",
-    "title": "Breaking Bad",
-    "genre": "Drama",
-    "rating": "9.5"
-  }
-]
+
 ```
 
 🔐 API keys stored securely in **AWS Secrets Manager**.
