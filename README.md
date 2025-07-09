@@ -116,6 +116,11 @@ AWS-3-Tier-_with_Terraform/
 | 🔐 IAM            | IAM roles + fine-grained permissions                     |
 
 ### 🚀 How to Deploy IaC
+clone this repossitory
+```
+https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL.git
+
+```
 
 ```bash
 cd production-grade-real-time-kubernetes-on-aws-eks/
