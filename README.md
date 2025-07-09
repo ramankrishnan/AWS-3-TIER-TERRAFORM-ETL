@@ -132,14 +132,32 @@ terraform apply
 📌 Replace values in `terraform.tfvars` or pass via CLI  before terraform init you have to change  your pem.file content in `privatekey` inside `eks-terraform-key` and one more thing make sure the key pair name would be `eks-terraform-key` .
 
 ---
-[`assets/output.png`(https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/asg.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/eip.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/instance.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/keypair.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/loadbalancer.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup1.png)
-[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/vpc.png)
+## ✅ Terraform Outputs (Screenshots)
+
+### 📌 Auto Scaling Group
+![Auto Scaling Group](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/asg.png)
+
+### 📌 EIP (Elastic IP)
+![EIP](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/eip.png)
+
+### 📌 EC2 Instance
+![EC2 Instance](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/instance.png)
+
+### 📌 Key Pair
+![Key Pair](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/keypair.png)
+
+### 📌 Load Balancer
+![Load Balancer](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/loadbalancer.png)
+
+### 📌 Target Group
+![Target Group](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup.png)
+
+### 📌 Target Group 1
+![Target Group 1](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup1.png)
+
+### 📌 VPC
+![VPC](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/vpc.png)
+
 
 
 ## ☸️ Stage 3: Kubernetes Deployment (App on EKS)
