@@ -132,6 +132,15 @@ terraform apply
 📌 Replace values in `terraform.tfvars` or pass via CLI  before terraform init you have to change  your pem.file content in `privatekey` inside `eks-terraform-key` and one more thing make sure the key pair name would be `eks-terraform-key` .
 
 ---
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/asg.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/eip.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/instance.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/keypair.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/loadbalancer.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup1.png)
+[`outputs/`](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/vpc.png)
+
 
 ## ☸️ Stage 3: Kubernetes Deployment (App on EKS)
 
