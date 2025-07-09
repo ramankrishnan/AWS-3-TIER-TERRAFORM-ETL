@@ -233,15 +233,15 @@ resource "aws_cloudwatch_metric_alarm" "cpu_utilization_high" {
     InstanceId = "<REPLACE_WITH_INSTANCE_ID>"
   }
 }
-``
-
+```
+step by step
 ```bash
 cd monitoring/
 terraform init
 terraform plan
 terraform apply
 ```
-`
+
 📌 Replace values in before terraform init you have to change  your `instance.id` .
 📬 Alerts delivered via **SNS** to email/SMS.
 
@@ -263,15 +263,29 @@ Fetches movie data from a **Netflix-like public API**, processes it with **Lambd
 [API] → [Lambda] → [S3] → [CloudWatch Logs]
 ```
 
-### 🧪 Sample Output
+```
+ cd ~/AWS-3-Tier-_with_Terraform/external-data-integration/lambda
+```
+```
+   mkdir -p package
+   pip install requests -t package/
+   cp fetch_weather.py package/
+   cd package
+   zip -r ../fetch_weather.zip .
 
 
 ```
 
-🔐 API keys stored securely in **AWS Secrets Manager**.
+```
+terraform init
+terraform plan
+terraform apply
+```
+  
 
-📸 Logs and JSON outputs available in [`outputs/`](./outputs)
+🔐 API keys stored securely in **Terraform.tfvars**.
 
+📸 
 ---
 
 ## 🌐 Stage 6: Custom Domain Integration (Route 53)
