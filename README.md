@@ -246,16 +246,17 @@ terraform apply
 📬 Alerts delivered via **SNS** to email/SMS.
 
 
-📸 ### 📌 EKS CLUSTER
+📌 EKS CLUSTER
 ![CLOUDWATCH  ALARAM](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/WhatsApp%20Image%202025-07-09%20at%209.40.26%20AM.jpeg)
 
 ---
 
+
+
 ## 🔄 Stage 5: ETL Integration with Netflix-style API
 
 
-
-Fetches movie data from a **Netflix-like public API**, processes it with **Lambda**, stores in **S3**, and triggers via **EventBridge**.
+ processes it with **Lambda**, stores in **S3**, and triggers via **EventBridge**.
 
 ### 🔁 ETL Flow
 
@@ -286,10 +287,14 @@ terraform apply
 🔐 API keys stored securely in **Terraform.tfvars**.
 
 📸  ### 📌 S3 
-![S3.ouput]https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/s3.output.png
+![S3.ouput](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/s3.output.png)
      📸  ### 📌 S3(sample output) 
-![S3.ouput]https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/s3.png
+![S3.ouput](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/s3.png)
 ---
+
+
+
+
 
 ## 🌐 Stage 6: Custom Domain Integration (Route 53)
 
