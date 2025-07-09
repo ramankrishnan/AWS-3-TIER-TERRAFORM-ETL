@@ -129,7 +129,7 @@ terraform plan
 terraform apply
 ```
 
-📌 Replace values in `terraform.tfvars` or pass via CLI.
+📌 Replace values in `terraform.tfvars` or pass via CLI  before terraform init you have to change  your pem.file content in privatekey inside eks-terraform-keyand one more thing make sure the kep pair name would be eks-terraform-key .
 
 ---
 
