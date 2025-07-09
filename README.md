@@ -129,7 +129,7 @@ terraform plan
 terraform apply
 ```
 
-📌 Replace values in `terraform.tfvars` or pass via CLI  before terraform init you have to change  your pem.file content in privatekey inside eks-terraform-keyand one more thing make sure the kep pair name would be eks-terraform-key .
+📌 Replace values in `terraform.tfvars` or pass via CLI  before terraform init you have to change  your pem.file content in `privatekey` inside `eks-terraform-key` and one more thing make sure the key pair name would be `eks-terraform-key` .
 
 ---
 
@@ -157,13 +157,9 @@ Deploys frontend + backend microservices on **EKS cluster** with health checks, 
 aws eks --region <region> update-kubeconfig --name <cluster-name>
 
 # Deploy backend
-kubectl apply -f k8s/backend/
+kubectl apply -f .
 
-# Deploy frontend
-kubectl apply -f k8s/frontend/
 
-# Deploy monitoring and autoscaling
-kubectl apply -f k8s/monitoring/
 ```
 
 📸 Output screenshots available in [`outputs/`](./outputs)
