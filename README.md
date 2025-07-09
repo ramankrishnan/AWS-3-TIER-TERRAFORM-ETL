@@ -38,7 +38,7 @@
 ## 🗂️ Project Structure
 ```
 AWS-3-Tier-_with_Terraform/
-├── Netflix-clone/                          #  (e.g., Netflix-style)
+├── ETL/                          #  (e.g., Netflix-style)
 │                 
 │
 ├── kubernetes/                             # Kubernetes application deployment manifests
