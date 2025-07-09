@@ -136,6 +136,8 @@ terraform apply
 
 ### 📌 Auto Scaling Group
 ![Auto Scaling Group](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/asg.png)
+### 📌 EKS CLUSTER
+![EKS CLUSSTER](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/Screenshot%20(179).png)
 
 ### 📌 EIP (Elastic IP)
 ![EIP](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/eip.png)
@@ -149,7 +151,7 @@ terraform apply
 ### 📌 Load Balancer
 ![Load Balancer](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/loadbalancer.png)
 
-### 📌 Target Group
+### 📌 LOAD Balancer
 ![Target Group](https://github.com/ramankrishnan/AWS-3-TIER-TERRAFORM-ETL/blob/master/assets/targetgroup.png)
 
 ### 📌 Target Group 1
